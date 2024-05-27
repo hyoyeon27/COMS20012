@@ -21,7 +21,7 @@
 
 
 **5. Complete the table by using followings:**
-     a. FIFO replacement policy
+   a. FIFO replacement policy
     
     
     | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
@@ -32,7 +32,7 @@
     | PP3    |   |   | c | c | c | c | c | a | a | a  | a  | a  |
     | Fault? | * | * | * |   |   | * | * | * |   |    | *  |    |
     
-    b. MIN replacement policy
+   b. MIN replacement policy
     
     | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
     |--------|---|---|---|---|---|---|---|---|---|----|----|----|
@@ -42,8 +42,8 @@
     | PP3    |   |   | c | c | c | e | e | e | e | e  | e  | e  |
     | Fault? | * | * | * |   |   | * | * |   |   |    | *  |    |
     
-    c. LRU replacement policy
-    
+  c. LRU replacement policy
+   
     | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
     |--------|---|---|---|---|---|---|---|---|---|----|----|----|
     | Ref    | a | b | c | a | b | e | d | a | e | d  | b  | d  |
@@ -52,7 +52,7 @@
     | PP3    |   |   | c | c | c | e | e | e | e | e  | e  | e  |
     | Fault? | * | * | * |   |   | * | * | * |   |    | *  |    |
     
-    d.Clock Policy
+   d.Clock Policy
     
     
     | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
