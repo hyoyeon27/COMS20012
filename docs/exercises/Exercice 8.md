@@ -42,8 +42,6 @@
     | PP3    |   |   | c | c | c | e | e | e | e | e  | e  | e  |
     | Fault? | * | * | * |   |   | * | * |   |   |    | *  |    |
     
-    For 11, we can evict a or e to load b as d will be referenced next, so I have chosen to evict a and load b, you can also choose to evict e and load b, it is just a choice as we do not know the next pages to be loaded.
-    
     c. LRU replacement policy
     
     | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
@@ -67,27 +65,27 @@
 
  
 **6. Complete the following table using:**
-     a. FIFO replacement policy
-    | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-    |--------|---|---|---|---|---|---|---|---|---|----|----|----|
-    | Ref    | a | b | c | e | b | d | b | f | e | f  | b  |  d | 
-    | PP1    | a | a | a | e | e | e | e | f | f | f  | f  | f  |
-    | PP2    |   | b | b | b | b | d | d | d | e | e  | e  | e  |
-    | PP3    |   |   | c | c | c | c | b | b | b | b  | b  | d  |
-    | Fault? | * | * | * | * |   | * | * | * | * |    |    | *  |
-    
-    
-    
-    b. Clock replacement policy
-    
-    | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-    |--------|---|---|---|---|---|---|---|---|---|----|----|----|
-    | Ref    | a | b | c | e | b | d | b | f | e | f  |  b |  d | 
-    | PP1    | a | a | a | e | e | e | e | f | f | f  |  f | d  |
-    | PP2    |   | b | b | b | b | b | b | b | e | e  |  e | e  |
-    | PP3    |   |   | c | c | c | d | d | d | d | d  |  b | b  |
-    | Fault? | * | * | * | * |   | * |   | * | * |    | *  | *  |
-    | Victim |V=1|V=1|V=1|V=2|V=2|V=1|V=1|V=2|V=3|V=3 | V=1| V=2|
-    |        |   |   |   |   |V=3|   |   |   |   |    |    |    |
+a. FIFO replacement policy
+| Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|--------|---|---|---|---|---|---|---|---|---|----|----|----|
+| Ref    | a | b | c | e | b | d | b | f | e | f  | b  |  d | 
+| PP1    | a | a | a | e | e | e | e | f | f | f  | f  | f  |
+| PP2    |   | b | b | b | b | d | d | d | e | e  | e  | e  |
+| PP3    |   |   | c | c | c | c | b | b | b | b  | b  | d  |
+| Fault? | * | * | * | * |   | * | * | * | * |    |    | *  |
+
+
+
+b. Clock replacement policy
+
+| Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|--------|---|---|---|---|---|---|---|---|---|----|----|----|
+| Ref    | a | b | c | e | b | d | b | f | e | f  |  b |  d | 
+| PP1    | a | a | a | e | e | e | e | f | f | f  |  f | d  |
+| PP2    |   | b | b | b | b | b | b | b | e | e  |  e | e  |
+| PP3    |   |   | c | c | c | d | d | d | d | d  |  b | b  |
+| Fault? | * | * | * | * |   | * |   | * | * |    | *  | *  |
+| Victim |V=1|V=1|V=1|V=2|V=2|V=1|V=1|V=2|V=3|V=3 | V=1| V=2|
+|        |   |   |   |   |V=3|   |   |   |   |    |    |    |
 
   
