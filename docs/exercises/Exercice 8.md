@@ -1,62 +1,27 @@
 # Exercises sheet 8
 
 
-1. Explain in your own words why abstractions are necessary.
+**1. Explain in your own words why abstractions are necessary.**
++ They make programming simpler. Without them, user level program will have to understand the logic of every piece of hardware they may have to interact with.
++ Abstractions also allow separation of concerns, presenting an interface that hides away the logic of the "object" being abstracted.
++ Abstractions also help with portability, as long as the same interface is presented to software building upon it, the underlying implementation/hardware should not matter.
 
-2. Explain what piece of hardware thread, address space and files help to abstract.
-
-3. Processes are not tied to a specific piece of hardware. What is their role?
-
-4. If you wanted to innovate in the implementation of virtual pages, would x86 architecture or MIPS architecture be more advantageous? (this is a reseacrh based question and is NOT examinable)
-
-5. What is a page fault?
-
-6. Complete the following table using: 
-
-| Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-|--------|---|---|---|---|---|---|---|---|---|----|----|----|
-| Ref    | a | b | c | a | b | e | d | a | e | d  | b  | d  |
-| PP1    |   |   |   |   |   |   |   |   |   |    |    |    |
-| PP2    |   |   |   |   |   |   |   |   |   |    |    |    |
-| PP3    |   |   |   |   |   |   |   |   |   |    |    |    |
-| Fault? |   |   |   |   |   |   |   |   |   |    |    |    |
-
-	a. FIFO replacement policy
-	b. MIN replacement policy
-	c. LRU replacement policy
-	d. Clock replacement policy
- 
-7. Complete the following table using:
-   
-| Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-|--------|---|---|---|---|---|---|---|---|---|----|----|----|
-| Ref    | a | b | c | e | b | d | b | f | e | f  |  b |  d | 
-| PP1    |   |   |   |   |   |   |   |   |   |    |    |    |
-| PP2    |   |   |   |   |   |   |   |   |   |    |    |    |
-| PP3    |   |   |   |   |   |   |   |   |   |    |    |    |
-| Fault? |   |   |   |   |   |   |   |   |   |    |    |    |
-
-a. FIFO replacement policy
-
-b. Clock replacement policy
+  
+**2. Explain what piece of hardware thread, address space and files help to abstract.**
++ Thread: CPU, address space: RAM, files: disk.
 
 
-## Answers
-1.  They are there to make programming simpler. Without them user level program will have to understand the logic of every piece of hardware they may have to interact with. Abstractions also allow separation of concerns, the abstraction present an interface that hides away the logic of the "object" being abstracted. Abstractions also help with portability, indeed, as long as the same interface is presented to software building upon it, the underlying implementation/hardware should not matter.
+
+**3. Processes are not tied to a specific piece of hardware. What is their role?**
++ They encapsulate other abstractions necessary for the execution of a task (i.e. thread, address space and files)
 
 
-2. Thread: CPU, address space: RAM, files: disk.
+**4. What is a page fault?**
++ Page faults occur when the virtual-physical address translation is not available in the TLB.
 
-3. They encapsulate other abstractions necessary for the execution of a task (i.e. thread, address space and files)
 
-
-4. MIPS is more advantageous as a lot of functionalities in X86 are hardware implemented, therefore MIPS is more adapted for implementing virtual pages. For more information check the following reesrach papers: 
-https://user.eng.umd.edu/~blj/papers/computer31-6.pdf
-https://user.eng.umd.edu/~blj/papers/CEH-chapter.pdf
-
-5. Page faults occur when the virtual-physical address translation is not available in the TLB.
-
-6. a. FIFO replacement policy
+**5. Complete the table by using followings:**
+ a. FIFO replacement policy
 
 
 | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
@@ -100,9 +65,9 @@ d.Clock Policy
 | PP3    |   |   | c | c | c | c | c | a | a | a  | a  | a  |
 | Fault? | * | * | * |   |   | * | * | * |   |    | *  |    |
 
-7. 
-
-   a. FIFO replacement policy
+ 
+**6. Complete the following table using:**
+ a. FIFO replacement policy
 | Num    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |--------|---|---|---|---|---|---|---|---|---|----|----|----|
 | Ref    | a | b | c | e | b | d | b | f | e | f  | b  |  d | 
@@ -124,3 +89,5 @@ b. Clock replacement policy
 | Fault? | * | * | * | * |   | * |   | * | * |    | *  | *  |
 | Victim |V=1|V=1|V=1|V=2|V=2|V=1|V=1|V=2|V=3|V=3 | V=1| V=2|
 |        |   |   |   |   |V=3|   |   |   |   |    |    |    |
+
+  
