@@ -3,26 +3,26 @@
 ## Intro to Cryptography 
 
 **1. What are the two basic functions used in encryption algorithms?**
-  + Permutation, substitution
-**2. How many keys are required for two people to communicate via a cipher?**
-  + One for symmetric, two for asymmetric
-**3. What is the difference between a block cipher and a stream cipher?**
-  + Stream cipher: encrypts a digital data stream bit-by-bit(byte-by-byte) at a time.
-  + Block cipher: a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length.
-**4. What are the two general approaches to attacking a cipher?**
-  + Cryptoanalysis, Brute-force
-**5. What is a trap-door one-way function?**
-  + A function that is easy to calculate in one direction and infeasible to calculate in the other derection, unless certain additional informatino is known.
-  + e.g., RSA encryption
-**6. What requirements must a public-key cryptosystems fulfill to be a secure algorithm?**
-  + Computationally easy for party B to generate a pair(PUb, PRb).
-  + Computationally easy for sender A to  enerate the corresponding ciphertext: C =  (PUb, M), knowing the public key and the message(M)
-  + Easy for the receiver B to decrypt the resulting ciphertext using the private key to recover original message: M = D(PRb, C) = D(PRb, E(PUb, M))
-  + Infeasible for an opponent(knowing PUb) to determine PRb.
-  + Infeasible for an opponent(knowing PUb + C) to recover M.
-**7. What is the difference between a message authentication code and a one-way hash function?**
-  + Hash function: does not provide message authentication. Secret key must be used to produce authentication.
-  + MAC: uses a  secret key to calculate a code for authentication.
+  + Permutation, substitution <br>
+**2. How many keys are required for two people to communicate via a cipher?** <br>
+  + One for symmetric, two for asymmetric <br>
+**3. What is the difference between a block cipher and a stream cipher?** <br>
+  + Stream cipher: encrypts a digital data stream bit-by-bit(byte-by-byte) at a time. <br>
+  + Block cipher: a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length. <br>
+**4. What are the two general approaches to attacking a cipher?** <br>
+  + Cryptoanalysis, Brute-force <br>
+**5. What is a trap-door one-way function?** <br>
+  + A function that is easy to calculate in one direction and infeasible to calculate in the other derection, unless certain additional informatino is known. <br>
+  + e.g., RSA encryption <br>
+**6. What requirements must a public-key cryptosystems fulfill to be a secure algorithm?** <br>
+  + Computationally easy for party B to generate a pair(PUb, PRb). <br>
+  + Computationally easy for sender A to  enerate the corresponding ciphertext: C =  (PUb, M), knowing the public key and the message(M) <br>
+  + Easy for the receiver B to decrypt the resulting ciphertext using the private key to recover original message: M = D(PRb, C) = D(PRb, E(PUb, M)) <br>
+  + Infeasible for an opponent(knowing PUb) to determine PRb. <br>
+  + Infeasible for an opponent(knowing PUb + C) to recover M. <br>
+**7. What is the difference between a message authentication code and a one-way hash function?** <br>
+  + Hash function: does not provide message authentication. Secret key must be used to produce authentication. <br>
+  + MAC: uses a  secret key to calculate a code for authentication. <br>
 
 
 ## Intro to Networking 
