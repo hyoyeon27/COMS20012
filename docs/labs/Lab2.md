@@ -119,7 +119,7 @@ If you need to exclude the HTTP from the TCP frames, you can type “tcp and not
 <img width="378" alt="Screenshot 2024-05-28 at 1 29 22 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/e6e2082e-5d2a-4b76-b6e3-0ac1521905c7"> <br>
 
 + `ìp.src == <ip.address>`
-  : display packets sent from a specific IP address
+  : display packets sent from a specific IP address <br>
 <img width="299" alt="Screenshot 2024-05-28 at 1 39 49 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/071e8e66-4e47-4284-a4f6-ddd547ea4d70"> <br>
 
 To find out the entire set of Display Filter syntax, you may click the Expression button next to the filter text box. For example, scroll to the IP entry and expand by clicking on the + sign or the arrow on the left. Wireshark should display all possible attributes of the object IP. Find ip.ttl and find out what it means. Type “ip.ttl” then “==” and type “64” in the value field so that the equation would look like the following (ip.ttl == 64) and Click OK.
