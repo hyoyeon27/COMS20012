@@ -26,9 +26,11 @@ at all possible do try and attend the lab where there will be *more* support.
 <img width="303" alt="Screenshot 2024-05-28 at 11 44 10 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/72f40369-0708-48a6-ab35-44160759f73d"> <br>
 
 5.	**Configure IP addresses** for PCs: (1) Rename the first PC to `192.168.1.100` (2) second PC to `192.168.5.100
-6.	Rename the first PC to (192.168.1.100) and then rename the second PC to (192.168.5.100). 
-7.	Click on the router and go to the Config tab and click on FastEthernet0/0. 
-8.	Type in the IP Address (192.168.1.1) and turn the Port Status to (on). 
+6.	**Configure Router Interfaces**: (1) Click router, `Config tab > FastEthernet0/0`. (2) Type in the IP address `192.168.1.1` and turn the Prot Status to `on`.
+7.	Do the same thing for the second PC.
+<img width="559" alt="Screenshot 2024-05-28 at 11 47 16 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/3f295d29-9618-42dc-a81d-d407ed36cebd"> <br>
+
+8.	
 9.	Now click on FastEthernet1/0 and type in the IP Address (192.168.5.1) and turn the Port Status to (on). Close the window.
 10.	Click on the first PC and go to the Desktop tab and click IP Configuration. 
 11.	In the IP Address textbox type (192.168.1.100) in the Subnet Mask textbox type (255.255.255.0). 
