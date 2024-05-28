@@ -49,7 +49,16 @@ The center pane displays the protocols associated with the selected Frame and th
 For example, if you select in the center pane the Ethernet II layer (Data Link) of a Frame, the hexadecimal representation of that layer information should be highlighted in the bottom pane. Take a [screenshot](https://github.com/cs-uob/COMS20012/blob/master/docs/materials/ScreenshotDNS.png).
 
 ## Q4 – Find out and describe how one could change the bottom pane view from Hex View to Bits.
++ ```Drag the hex val > ... as decimal```
++ The hex value represents the raw vinary data of the packet.
+
+
 ## Q5 – Explain the how one would go about converting decimal number 87 into its Hex and Binary representations.
+<img width="468" alt="Screenshot 2024-05-28 at 1 10 44 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/034a19f0-0531-4a56-a9cc-3236bd3e3764">
++ Hex: ```Show bytes as hexadecimal```
++ Binary: ```...as binary```
+
+
 
 ## Exercise 2: Capturing Frames and encoding:
 Open a Firefox browser on the Host. Select Edit > Preferences > Privacy and select Never remember history and click on clear all current history. Click Close. Make sure that the startup home page of your browser is Google or Ubuntu Google. Close the browser.
