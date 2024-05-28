@@ -102,30 +102,31 @@ For example, if you select in the center pane the Ethernet II layer (Data Link) 
   + Start capturing packets with Wireshark before launching the browser.
   + Stop tshe capture after a second or two and save the captured packets using `File > Save` As in Wireshark.
 
-    
-   Then launch Firefox browser on the Host to force the generation of http requests &responses and tcp segments. Note that ARPs messages are dynamically generated on a regular basis. Wireshark should display frames/packets with protocols, such as, ARP, DNS, TCP, HTTP, etc. Did you get similar [traffic](https://github.com/cs-uob/COMS20012/blob/master/docs/materials/Selection_003.png)? 
 
-Wait a second or two and then close the browser. Stop capturing packets by clicking on the stop icon (see above) or select Capture > Stop from the top bar menu. Save the captured packets in a file: select File > Save As > enter a name, say, Lab_Capture_Lastnames.pcap, navigate where you want to save the file, and click Save.
-
-Check http://www.ascii-code.com/, that is, the ASCII table:
-Provide the binary representation of the character A (letter), the character 3 (number) and the no-displayable character \r (carriage return).
-Using the ASCII table, find out the Hexadecimal representations of the characters G, E and T (that is the word GET).
 
 ## Exercise 3: Wireshark Display/Filtering
-Continuing with the captured packets on Wireshark, type http in the tool bar text box and click Apply. The background of the text box turns green when the typed text in the correct syntax (that is, expected by Wireshark). Wireshark should display Frames with http protocol (as the top protocol).
-Type tcp in the tool bar text box and click Apply.
+**Filter tool bar**: a bar where you can type filter expressions to display only specific types of traffic. 
+<img width="644" alt="Screenshot 2024-05-28 at 1 25 20 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/e0391a41-c3d7-4691-93ce-7640182f44e4"> <br>
+
+  + Type `http` in the tool bar text box and click `Apply`.
+  + The background of the text box turns green when syntax is correct.
+  + Wireshark display Frames with `http protocol` (as the top protocol).
+  + Type `tcp` in the tool bar text box and click `Apply` (will display TCP packets only).
 
 ## Q8 - Why are there some frames labeled as HTTP under the protocol heading after applying the tcp filter?
 If you need to exclude the HTTP from the TCP frames, you can type “tcp and not http” (which means filter for tcp and exclude http) in the filter text box. Try it out. Provide your results. For more information regarding wireshark filters check the following link.
 
-If you need to display packets sent (sourced from) by a specific IP address, you should enter ip.src== “ip address” (replace the word “ip address” with the specific IP address you are searching for). Provide an example.
+<img width="378" alt="Screenshot 2024-05-28 at 1 29 22 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/e6e2082e-5d2a-4b76-b6e3-0ac1521905c7"> <br>
+
++ `ìp.src == <ip.address>`
+  : display packets sent from a specific IP address
+<img width="299" alt="Screenshot 2024-05-28 at 1 39 49 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/071e8e66-4e47-4284-a4f6-ddd547ea4d70"> <br>
+
 To find out the entire set of Display Filter syntax, you may click the Expression button next to the filter text box. For example, scroll to the IP entry and expand by clicking on the + sign or the arrow on the left. Wireshark should display all possible attributes of the object IP. Find ip.ttl and find out what it means. Type “ip.ttl” then “==” and type “64” in the value field so that the equation would look like the following (ip.ttl == 64) and Click OK.
 ## Q9 - Describe what happens (what you have witnessed).
 ## Q10 – Can I filter for a specific source IP address and specific destination IP address? Provide screenshots.
+<img width="332" alt="Screenshot 2024-05-28 at 1 41 48 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/0bef71de-a52c-4bbb-a965-46b13e399500"> <br>
 
-**NOTE:** this weeks lab *should* work on any machine... including
-an M1 Mac, a lab machine and anything else you can throw at it... but
-you *might* need to tweak things to get it all working; and if in
-doubt fall back to `ssh seis.bristol.ac.uk`
-Good Luck
-Alma
++ ìp.src == <ip.address> and ip.dst == <ip.address>`
+
+
