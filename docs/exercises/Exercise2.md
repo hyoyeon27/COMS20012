@@ -3,7 +3,7 @@
 ## Intro to Cryptography 
 
 **1. What are the two basic functions used in encryption algorithms?**
-  + Permutation, substitution <br>
+  + Permutation, substitution 
 **2. How many keys are required for two people to communicate via a cipher?** <br>
   + One for symmetric, two for asymmetric <br>
 **3. What is the difference between a block cipher and a stream cipher?** <br>
