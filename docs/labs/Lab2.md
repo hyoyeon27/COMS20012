@@ -35,12 +35,12 @@ Check the boxes for all Displays Options and Name Resolution. Make sure that “
 + **Promiscuous mode**: a mode that allows the network interface to pass all traffic it receives to the CPU rather than just the frames addressed to it.
 + Purpose: to enable the user to see all packets on the network, not just those directed to their network adaptor
 + Setting: ```Edit > Preferences > Capture ```
- <img width="551" alt="Screenshot 2024-05-28 at 12 51 05 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/4073e150-a558-4ce4-aa7f-3799a1a46a6b">
+ <img width="551" alt="Screenshot 2024-05-28 at 12 51 05 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/4073e150-a558-4ce4-aa7f-3799a1a46a6b"> <br>
 
 Wireshark should start displaying “packets” (actually displaying frames) transmitted or received on the selected interface. Note that each line represents an Ethernet Frame. Wireshark window is divided into 3 panes. If you do not see all 3 panes you may have to click on one of the thick horizontal divider to show any hidden pane. The top pane displays one row of info for each frame/packet captured.
 
 ## Q2 - Describe the information provided and explain the headings of the columns.
-<img width="591" alt="Screenshot 2024-05-28 at 1 05 47 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/067007c3-b344-4c73-b75a-431bb590a81d">
+<img width="591" alt="Screenshot 2024-05-28 at 1 05 47 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/067007c3-b344-4c73-b75a-431bb590a81d"> <br>
 Note that the frames/packets (rows) are sorted by Time. However, you can change that by clicking on the heading of another column and therefore sort by the heading of that column.
 
 ## Q3 – Provide an example where you have sorted the frames using the Protocol column.
