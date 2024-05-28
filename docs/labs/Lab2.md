@@ -10,6 +10,7 @@ As you will be using Wireshark for this lab, let's learn how to setup Wireshark 
 
 In the previous lab we were setting up Vagrant and VirtualBox VM, to make sure today lab is successful go to the vagrant file in your CS_Vagrant and delete it. 
 
+
 **For this lab make new file otherwise it will not work!!!**
 
 1. On your host machine, open a terminal in you home directory (or whatever directory you are asigned which has good memory). Make a directory `mkdir CS_Lab`
@@ -39,8 +40,7 @@ Check the boxes for all Displays Options and Name Resolution. Make sure that “
 Wireshark should start displaying “packets” (actually displaying frames) transmitted or received on the selected interface. Note that each line represents an Ethernet Frame. Wireshark window is divided into 3 panes. If you do not see all 3 panes you may have to click on one of the thick horizontal divider to show any hidden pane. The top pane displays one row of info for each frame/packet captured.
 
 ## Q2 - Describe the information provided and explain the headings of the columns.
-<img width="588" alt="Screenshot 2024-05-28 at 1 04 50 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/88f826db-6989-4328-a3ff-69309c01af84">
-
+<img width="591" alt="Screenshot 2024-05-28 at 1 05 47 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/067007c3-b344-4c73-b75a-431bb590a81d">
 Note that the frames/packets (rows) are sorted by Time. However, you can change that by clicking on the heading of another column and therefore sort by the heading of that column.
 
 ## Q3 – Provide an example where you have sorted the frames using the Protocol column.
