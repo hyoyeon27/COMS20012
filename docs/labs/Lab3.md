@@ -17,12 +17,15 @@ Teams group for the unit and we'll try and help you from there, but if
 at all possible do try and attend the lab where there will be *more* support. 
 
 ## Exercise 1. Setting up simple network in Packet Tracer
+### Create a New Network
+1.	Open packet tracer and create a new file by `File > New`.
+2.	Add network devices by `Network Devices > End Devices > Drag a new PT-Router`.
+   + **PT-Router**: Packet Racer Router, a virtual router 
+3.	**Establish a connection** between PC1 and Router by using a `Copepr Corss-Cover cable`to connect the first PC's `FastEthernet0`to the router's `FastEthernet0/0`.
+4.	Establish a second connection between PC2(`FastEthernet0`) to the router(`FastEthernet1/0`).
+<img width="303" alt="Screenshot 2024-05-28 at 11 44 10 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/72f40369-0708-48a6-ab35-44160759f73d"> <br>
 
-1.	Open packet tracer and click on file then new
-2.	On the bottom left click on the “Network Devices” icon routers and drag a new PT-Router.
-3.	Click on the “End Devices” next and drag two generic PCs. 
-4.	Click on “Connections” and select on a “Copper Cross-Over” cable and connect the first PC through a FastEthernet0 then click on the router and plug it into the routers FastEthernet0/0 as well. 
-5.	Get another Cross-Over cable and click on the second PC’s FastEthernet0 and plug that into the other FastEthernet1/0 on the router.
+5.	**Configure IP addresses** for PCs: (1) Rename the first PC to `192.168.1.100` (2) second PC to `192.168.5.100
 6.	Rename the first PC to (192.168.1.100) and then rename the second PC to (192.168.5.100). 
 7.	Click on the router and go to the Config tab and click on FastEthernet0/0. 
 8.	Type in the IP Address (192.168.1.1) and turn the Port Status to (on). 
