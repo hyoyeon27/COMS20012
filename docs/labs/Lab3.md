@@ -27,7 +27,7 @@ at all possible do try and attend the lab where there will be *more* support.
 
 5.	**Configure IP addresses** for PCs: (1) Rename the first PC to `192.168.1.100` (2) second PC to `192.168.5.100
 6.	**Configure Router Interfaces**: (1) Click router, `Config tab > FastEthernet0/0`. (2) Type in the IP address `192.168.1.1` and turn the Prot Status to `on`.
-7.	Do the same thing for the second PC.
+7.	Do the same thing for the second PC.<br>
 <img width="559" alt="Screenshot 2024-05-28 at 11 47 16 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/3f295d29-9618-42dc-a81d-d407ed36cebd"> <br>
 
 8.	**Configure first PC**: **(1)** `Desktop tab > IP configuration` **(2)** Set the IP address and Subnet Mask address (`255.255.255.0`) **(3)** Open Command Prompt on the first PC for connectivity test. **(4)** Set the Default Gateway and DNS Server to `192.168.1.1`.
