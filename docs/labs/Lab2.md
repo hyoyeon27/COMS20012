@@ -54,7 +54,7 @@ For example, if you select in the center pane the Ethernet II layer (Data Link) 
 
 
 ## Q5 – Explain the how one would go about converting decimal number 87 into its Hex and Binary representations.
-<img width="468" alt="Screenshot 2024-05-28 at 1 10 44 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/034a19f0-0531-4a56-a9cc-3236bd3e3764">
+<img width="468" alt="Screenshot 2024-05-28 at 1 10 44 AM" src="https://github.com/hyoyeon27/COMS20012/assets/117199082/034a19f0-0531-4a56-a9cc-3236bd3e3764"> <br>
 + Hex: ```Show bytes as hexadecimal```
 + Binary: ```...as binary```
 
