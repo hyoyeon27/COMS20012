@@ -3,9 +3,11 @@
 ## Intro to Cryptography 
 
 **1. What are the two basic functions used in encryption algorithms?**
-  + Permutation, substitution 
+  + Permutation, substitution  
+  <br>
 **2. How many keys are required for two people to communicate via a cipher?** <br>
-  + One for symmetric, two for asymmetric <br>
+  + One for symmetric, two for asymmetric
+<br>
 **3. What is the difference between a block cipher and a stream cipher?** <br>
   + Stream cipher: encrypts a digital data stream bit-by-bit(byte-by-byte) at a time. <br>
   + Block cipher: a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length. <br>
